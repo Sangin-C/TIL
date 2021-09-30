@@ -40,9 +40,9 @@ System.out.println(empty);
 
 ### .get()
 .get()을 하면 Optional에 있는 값을 꺼내올 수 있다.   
-값이 있으면 문제가 없지만, 값이 없는걸 꺼내려고하면 Runtime Exception이 터진다.   
-Optional값이 있는지 확인하고 써야한다.   
-if문보다는 Optional이 제공해주는 API를 사용하는게 좋다.   
+- 값이 있으면 문제가 없지만, 값이 없는걸 꺼내려고하면 Runtime Exception이 터진다.   
+- Optional값이 있는지 확인하고 써야한다.   
+- if문보다는 Optional이 제공해주는 API를 사용하는게 좋다.   
 ```java
 Optional<Test> optional = test.stream()
         .filter(oc -> oc.getTitle().startsWith("spring"))
@@ -92,7 +92,7 @@ System.out.println(testGet.getTitle());
 
 ### .orElseThrow()
 .orElseThrow()은 Optinal에 값이 있으면 가져오고 값이 없으면 Exception을 던진다.   
-원하는 에러가 있으면 작성하면된다.
+- 원하는 에러가 있으면 작성하면된다.
 ```java
 Optional<Test> optional = test.stream()
         .filter(oc -> oc.getTitle().startsWith("spring"))
@@ -106,8 +106,9 @@ System.out.println(testThrow.getTitle());
 ---
 
 ### .filter()
-.filter()는 값이 있다는 가정하에 쓰는것이다. 값이 없으면 아무것도 리턴해주지 않는다.   
-Optinal에 들어있는 값을 걸러낼때 쓴다.
+.filter()는 값이 있다는 가정하에 쓰는것이다.   
+- 값이 없으면 아무것도 리턴해주지 않는다.   
+- Optinal에 들어있는 값을 걸러낼때 쓴다.
 ```java
 Optional<Test> testFilter = optional.filter(oc -> !oc.isClosed());
 System.out.println(testFilter.isEmpty());
