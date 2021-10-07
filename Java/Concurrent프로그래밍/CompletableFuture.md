@@ -150,9 +150,7 @@ CompletableFuture<String> thenCombine = hello.thenCombine(world, (h, w) -> {
 thenCombine.get();
 ```
 ---
-
 ## 두 개 이상의 작업을 조합해야할때
-
 ### .anyOf()
 - 여러 작업중 가장 빨리 끝나는 것을 가져온다.
 ```java
@@ -171,7 +169,6 @@ CompletableFuture<Void> anyOf = CompletableFuture.anyOf(hello, world)
 anyOf.get();
 ```
 ---
-
 ## 예외 처리
 ### .exceptionally()
 - 예외를 처리할 수 있다.
@@ -189,7 +186,7 @@ CompletableFuture<String> exceoptionally = CompletableFuture.supplyAsync(() -> {
 });
 exceoptionally.get();
 ```
-
+---
 ### .handle()
 - exceptionally()보다 더 일반적으로 쓰이는 메서드가 있는데 바로 .handle()이다.
 
