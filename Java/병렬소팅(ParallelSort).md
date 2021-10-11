@@ -15,6 +15,7 @@ long start = System.nanoTime();
 Arrays.sort(numbers);
 System.out.println("serial sorting took " + (System.nanoTime() - start));
 ```
+---
 
 ### Parallel Sort 방식
 - 여러개의 Thread를 이용해서 Sort하기 때문에 정렬해야할 값이 많다면 Parallel Sort방식이 빠르다.
