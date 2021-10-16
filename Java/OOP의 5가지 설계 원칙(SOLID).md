@@ -10,17 +10,21 @@
 - 소프트웨어 작업에서 프로그래머가 소스 코드가 읽기 쉽고 확장하기 쉽게 될 때까지 소프트웨어 소스 코드를 리팩터링하여 코드 냄새를 제거하기 위해 적용할 수 있는 지침이다.
 
 
-### SRP - 단일 책임 원칙 (Single responsibility principle)
+### SRP - 단일 책임 원칙 (Single Responsibility Principle)
 - 한 클래스는 하나의 책임만을 가져야 한다.
+- 클래스는 단 하나의 목적을 가져야하고, 클래스를 변경하는 이유는 단 하나의 이유여야 한다.
 
-### OCP - 개방-폐쇄 원칙 (Open/closed principle)
+### OCP - 개방-폐쇄 원칙 (Open/Closed Principle)
 - 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
 
-### LSP - 리스코프 치환 원칙 (Liskov substitution principle)
+### LSP - 리스코프 치환 원칙 (Liskov Substitution Principle)
 - 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
+- 상위 타입의 객체를 하위 타입으로 바꾸어도 프로그램은 일관되게 동작해야 한다.
 
-### ISP - 인터페이스 분리 원칙 (Interface segregation principle)
+### ISP - 인터페이스 분리 원칙 (Interface Segregation Principle)
 - 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
+- 클라이언트는 이용하지 않는 메서드에 의존하지 않도록 인터페이스를 분리해야 한다.
 
-### DIP - 의존관계 역전 원칙 (Dependency inversion principle)
+### DIP - 의존관계 역전 원칙 (Dependency Inversion Principle)
 - 프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다.
+- 클라이언트는 추상화(인터페이스)에 의존해야하며, 구체화(구현된 클래스)에 의존해서는 안된다.
