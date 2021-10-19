@@ -12,7 +12,7 @@
 ## ArrayList
 ### 특징
 - 데이터들이 순서대로 늘어선 배열의 형식을 취하고 있다.
-- 일반배열(Array)와 인덱스를 이용해 객체를 관리한다는 점에서는 동일하다.
+- 일반배열(Array)와 인덱스를 이용해 데이터를 관리한다는 점에서는 동일하다.
 - 일반배열(Array)와 다르게 크기를 동적으로 늘릴 수 있다.
 - 일반배열(Array)는 primitive type(int, long, char)와 object 모두 담을 수 있지만, ArrayList는 object element만 담을 수 있다.
 - 일반배열(Array)는 제네릭 타입을 사용할 수 없지만, ArrayList는 제네릭 타입을 사용할 수 있다.
